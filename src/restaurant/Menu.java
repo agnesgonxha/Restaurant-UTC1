@@ -6,13 +6,7 @@ import main.Food;
 
 public class Menu {
 	private String category;
-	
 	private ArrayList<Food> foods = new ArrayList<Food>();
-
-	public Menu(String category) {
-		super();
-		this.category = category;
-	}
 
 	public String getCategory() {
 		return category;
@@ -22,6 +16,11 @@ public class Menu {
 		this.category = category;
 	}
 
+	public Menu(String category) {
+		super();
+		this.category = category;
+	}
+	
 
 	public ArrayList<Food> getFoods() {
 		return foods;
@@ -33,9 +32,5 @@ public class Menu {
 
 	public void add(Food food) {
 		foods.add(food);
-		
 	}
-	
-	
-
 }

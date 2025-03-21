@@ -4,12 +4,7 @@ import java.util.ArrayList;
 
 public class Chef {
 	private String name;
-	private ArrayList<String> historyOfOrder = new ArrayList<String>();
-
-	public Chef(String name) {
-		super();
-		this.name = name;
-	}
+	private ArrayList<String> historyOfOrders = new ArrayList<String>();
 
 	public String getName() {
 		return name;
@@ -18,17 +13,19 @@ public class Chef {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public Chef(String name) {
+		super();
+		this.name = name;
+	}
 	
-	public void addHitory(String message) {
-		historyOfOrder.add(message);
+	public void addHistoryOfOrder (String massage) {
+		historyOfOrders.add(massage);
 	}
 
 	public void showCookHistory() {
-		historyOfOrder.forEach((h) -> {
+		historyOfOrders.forEach((h) -> {
 			System.out.println(h);
 		});
 	}
-	
-	
-
 }

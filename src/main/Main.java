@@ -10,6 +10,10 @@ public class Main {
 	public static void main(String[] args) {	
 		Restaurant restaurant = new Restaurant("Rumah Sambal");
 		
+		System.out.println("Welcome To Restaurant");
+		System.out.println("==> " + restaurant.getName() + " <==");
+		System.out.println();
+		
 		Chef chef1 = new Chef("Bintang");
 		Chef chef2 = new Chef("Sawitri");
 		
@@ -45,9 +49,12 @@ public class Main {
 		restaurant.order(chef2, visitor2, "Udang Emas", 9);
 		restaurant.order(chef2, visitor2, "Ice Cream", 90);
 		
+		System.out.println("===== TOATAL PRICE =====");
 		visitor1.showTotalPrice();
 		visitor2.showTotalPrice();
+
 		
+		System.out.println("\n===== HISTORY OF ORDERS =====");
 		chef1.showCookHistory();
 		chef2.showCookHistory();
 		
